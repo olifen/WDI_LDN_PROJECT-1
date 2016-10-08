@@ -3,20 +3,133 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css"/>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-  <!-- <script src="js/app.js" charset="utf-8"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/app.js" charset="utf-8"></script> -->
   <title>Project 1</title>
 </head>
 <body>
 
-<h1>Project 1</h1>
-  <!-- <div id="main">
-    <div id="flag"><img src="" id="random_flag" /></div>
-    <input id="flagAnswer" value=""/>
+  <div id="board">
+
+    <div id="player1Board" class="board">
+      <div class="flag">
+        <img id="player1Flag1" src="#"/><br>
+        <input id="p1f1CountryInput" class="countryInput" type="text" value="" data-index="0"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player1Flag2" src="#"/><br>
+        <input id="p1f2CountryInput" class="countryInput" type="text" value="" data-index="1"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player1Flag3" src="#"/><br>
+        <input id="p1f3CountryInput" class="countryInput" type="text" value="" data-index="2"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player1Flag4" src="#"/><br>
+        <input id="p1f4CountryInput" class="countryInput" type="text" value="" data-index="3"><br>
+        <input type="text" value="">
+      </div>
+    </div>
+
+    <div id="pileFlags">
+      <div class="flag">
+        <div id="player1Score">
+          <p>player 1</p>
+          <p>0</p>
+        </div>
+        <div id="player2Score">
+          <p>player 2</p>
+          <p>0</p>
+        </div>
+      </div>
+      <div class="flag">
+        <img id="pileFlagsLeft" src="#"/>
+      </div>
+      <div class="flag">
+        <img id="pileFlagsRight" src="#"/>
+      </div>
+      <div class="flag">
+        <div id="playerTurn">
+          <p>player 1's turn</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="player2Board" class="board">
+      <div class="flag">
+        <img id="player2Flag1" src="#"/><br>
+        <input id="p2f1CountryInput" class="countryInput" type="text" value="" data-index="4"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player2Flag2" src="#"/><br>
+        <input id="p2f2CountryInput" class="countryInput" type="text" value="" data-index="5"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player2Flag3" src="#"/><br>
+        <input id="p2f3CountryInput" class="countryInput" type="text" value="" data-index="6"><br>
+        <input type="text" value="">
+      </div>
+      <div class="flag">
+        <img id="player2Flag4" src="#"/><br>
+        <input id="p2f4CountryInput" class="countryInput" type="text" value="" data-index="7"><br>
+        <input type="text" value="">
+      </div>
+    </div>
+
   </div>
 
-  <script src="js/app.js" charset="utf-8"></script> -->
+  <script src="js/app.js" charset="utf-8"></script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+Flag Game
+
+- levels
+- easy, intermediate, hard, extra-hard
+- 196(?) flags
+- random flag appears on screen
+- rounds of 10?
+- user guesses flag
+- input box?
+- multiple choice?
+- correct answer + 3 random countries?
+- hints?
+- continent
+- capital city
+- fact
+- score
+- +10 for correct answer
+- -1 for incorrect answer
+- -1 for each hint used
+- display score
+
+
+
+
+
+
+-->

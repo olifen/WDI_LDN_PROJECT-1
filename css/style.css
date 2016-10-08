@@ -1,0 +1,25 @@
+img {
+  width: 200px;
+}
+
+.flag {
+  display: inline-block;
+  margin: 5px;
+}
+
+input {
+  width: 195px;
+}
+
+#board, #player1Board, #player2Board, #pileFlags {
+  border: 1px solid black;
+  margin: 25px;
+}
+
+#player1Score, #player2Score {
+  display: inline-block;
+}
+/*#pileFlags {
+  width: 80%;
+  margin: 0 auto !important;
+}*/
