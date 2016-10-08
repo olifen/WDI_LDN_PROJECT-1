@@ -94,16 +94,16 @@ for (var i = 0; i < inputs.length; i++) {
 };
 
 
-update scores
-var player1Score = 0;
-var player2Score = 0;
-
-var updateScores = function() {
-  if (checkAnswer ==
-  document.getElementById("player1Score").innerHTML=player1Score;
-  document.getElementById("player2Score").innerHTML=player2Score;
-}
-updateScores();
+// update scores
+// var player1Score = 0;
+// var player2Score = 0;
+//
+// var updateScores = function() {
+//   if (checkAnswer ==
+//   document.getElementById("player1Score").innerHTML=player1Score;
+//   document.getElementById("player2Score").innerHTML=player2Score;
+// }
+// updateScores();
 
 
 
