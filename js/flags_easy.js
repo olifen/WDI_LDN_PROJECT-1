@@ -43,7 +43,7 @@ var flagsEasy = [{
   country: "argentina",
   capital: "buenos aires"
 },{
-  image: "images/australia.svg",
+  image: "images/flags_easy/australia.svg",
   country: "australia",
   capital: "canberra"
 },{
@@ -59,7 +59,7 @@ var flagsEasy = [{
   country: "canada",
   capital: "ottawa"
 },{
-  image: "images/czech republic.svg",
+  image: "images/czechrepublic.svg",
   country: "czech republic",
   capital: "prague"
 },{
@@ -95,11 +95,11 @@ var flagsEasy = [{
   country: "portugal",
   capital: "lisbon"
 },{
-  image: "images/south africa.svg",
+  image: "images/southafrica.svg",
   country: "south africa",
   capital: "pretoria"
 },{
-  image: "images/south korea.svg",
+  image: "images/southkorea.svg",
   country: "south korea",
   capital: "seoul"
 },{
