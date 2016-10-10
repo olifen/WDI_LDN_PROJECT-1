@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/easystyle.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/app.js" charset="utf-8"></script> -->
   <title>Flags</title>
@@ -15,23 +17,23 @@
     </div>
     <div id="player1Board" class="board">
       <div class="flag">
-        <img id="player1Flag1" src="#"/><br>
-        <input id="p1f1CountryInput" class="countryInput" type="text" value="" data-index="0"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p1f1CountryInput" class="countryInput" class="flagBoard1" type="text" value="" data-index="0"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player1Flag2" src="#"/><br>
-        <input id="p1f2CountryInput" class="countryInput" type="text" value="" data-index="1"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p1f2CountryInput" class="countryInput" class="flagBoard1" type="text" value="" data-index="1"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player1Flag3" src="#"/><br>
-        <input id="p1f3CountryInput" class="countryInput" type="text" value="" data-index="2"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p1f3CountryInput" class="countryInput" class="flagBoard1" type="text" value="" data-index="2"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player1Flag4" src="#"/><br>
-        <input id="p1f4CountryInput" class="countryInput" type="text" value="" data-index="3"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p1f4CountryInput" class="countryInput" class="flagBoard1" type="text" value="" data-index="3"><br>
         <!-- <input type="text" value=""> -->
       </div>
     </div>
@@ -51,35 +53,36 @@
         </div>
       </div>
       <div class="middleBoard">
-        <img id="pileFlagsLeft" src="#"/>
+        <img class="pile" id="pileFlagsLeft" onclick="replaceFlag(this)" src="#"/>
       </div>
       <div class="middleBoard">
-        <img id="pileFlagsRight" src="#"/>
+        <img class="pile" id="pileFlagsRight" onclick="replaceFlag(this)" src="#"/>
       </div>
     </div>
-    <div class="playerBoard">
-      player 2's board
-    </div>
+
     <div id="player2Board" class="board">
       <div class="flag">
-        <img id="player2Flag1" src="#"/><br>
-        <input id="p2f1CountryInput" class="countryInput" type="text" value="" data-index="4"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p2f1CountryInput" class="countryInput" class="flagBoard2" type="text" value="" data-index="4"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player2Flag2" src="#"/><br>
-        <input id="p2f2CountryInput" class="countryInput" type="text" value="" data-index="5"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p2f2CountryInput" class="countryInput" class="flagBoard2" type="text" value="" data-index="5"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player2Flag3" src="#"/><br>
-        <input id="p2f3CountryInput" class="countryInput" type="text" value="" data-index="6"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p2f3CountryInput" class="countryInput" class="flagBoard2" type="text" value="" data-index="6"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
-        <img id="player2Flag4" src="#"/><br>
-        <input id="p2f4CountryInput" class="countryInput" type="text" value="" data-index="7"><br>
+        <img class="flagImage" src="#"/><br>
+        <input id="p2f4CountryInput" class="countryInput" class="flagBoard2" type="text" value="" data-index="7"><br>
         <!-- <input type="text" value=""> -->
+      </div>
+      <div class="playerBoard">
+        player 2's board
       </div>
     </div>
 

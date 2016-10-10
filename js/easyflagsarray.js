@@ -152,7 +152,7 @@ var flagsEasy = [{
   capital: "tehran"
 },{
   image: "images/flags_easy/new_zealand.svg",
-  country: "new_zealand",
+  country: "new zealand",
   capital: "wellington"
 },{
   image: "images/flags_easy/nigeria.svg",
@@ -176,7 +176,7 @@ var flagsEasy = [{
   capital: "bucharest"
 },{
   image: "images/flags_easy/saudi_arabia.svg",
-  country: "saudi_arabia",
+  country: "saudi arabia",
   capital: "riyadh"
 },{
   image: "images/flags_easy/serbia.svg",
