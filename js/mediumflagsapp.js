@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var inputs = document.getElementsByClassName("countryInput");
   var turn = "player 2";
   var flagToReplaceIndex = 4;
-  var flag = flagsEasy.splice(0, 1);
+  var flag = flagsMedium.splice(0, 1);
   var player1Score = 0;
   var player2Score = 0;
   var flagImage = document.getElementsByClassName("flagImage");
@@ -17,24 +17,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // shuffles the cards at the beginning of the game
   function shuffle() {
-    var flagIndex = flagsEasy.length;
+    var flagIndex = flagsMedium.length;
     var index;
     var temp;
 
     while (flagIndex > 0) {
       index = Math.floor(Math.random() * flagIndex);
       flagIndex--;
-      temp = flagsEasy[flagIndex];
-      flagsEasy[flagIndex] = flagsEasy[index];
-      flagsEasy[index] = temp;
+      temp = flagsMedium[flagIndex];
+      flagsMedium[flagIndex] = flagsMedium[index];
+      flagsMedium[index] = temp;
     }
   }
 
 // deals 4 cards into each player's board
   function deal() {
     for(var i=0; i<=3; i++) {
-      player1Flags.push(flagsEasy.pop());
-      player2Flags.push(flagsEasy.pop());
+      player1Flags.push(flagsMedium.pop());
+      player2Flags.push(flagsMedium.pop());
     }
   }
 
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       flags2[i].setAttribute('data-answer', player2Flags[i].country);
     }
 
-    pileFlags[0].src = flagsEasy[0].image;
-    pileFlags[1].src = flagsEasy[1].image;
+    pileFlags[0].src = flagsMedium[0].image;
+    pileFlags[1].src = flagsMedium[1].image;
   }
 
 // checks to see if text in input box matches the country name

@@ -35,7 +35,7 @@ var flagsExtraHard = [{
   country: "dominica",
   capital: "roseau"
 },{
-  image: "images/flags_extra_hard/domincan_republic.svg",
+  image: "images/flags_extra_hard/dominican_republic.svg",
   country: "dominican republic",
   capital: "santo domingo"
 },{
