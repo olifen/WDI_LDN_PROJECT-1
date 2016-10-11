@@ -1,4 +1,8 @@
 var flagsExtraHard = [{
+  image: "dummy",
+  country: "dummy",
+  capital: "dummy"
+},{
   image: "images/flags_extra_hard/antigua_and_barbuda.svg",
   country: "antigua and barbuda",
   capital: "st john's"

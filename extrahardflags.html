@@ -4,137 +4,73 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/extrahardstyle.css"/>
   <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/app.js" charset="utf-8"></script> -->
-  <title>Flags</title>
+  <title>Flags - Extra Hard</title>
 </head>
 <body>
 
-  <div id="board">
-    <div class="playerBoard">
+  <div>
+    <div id="player1Bar" class="playerBoard">
       player 1's board
     </div>
-    <div id="player1Board" class="board">
+    <div id="player1Board">
       <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p1f1CountryInput" class="countryInput" type="text" value="" data-index="0"><br>
-        <!-- <input type="text" value=""> -->
+        <img class="flagImage" src="#"/>
+        <input class="countryInput" id="ci1a" value="" data-index="0">
       </div>
       <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p1f2CountryInput" class="countryInput" type="text" value="" data-index="1"><br>
-        <!-- <input type="text" value=""> -->
+        <img class="flagImage" src="#"/>
+        <input class="countryInput" id="ci1b" value="" data-index="1">
       </div>
       <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p1f3CountryInput" class="countryInput" type="text" value="" data-index="2"><br>
-        <!-- <input type="text" value=""> -->
+        <img class="flagImage" src="#"/>
+        <input class="countryInput" id="ci1c" value="" data-index="2">
       </div>
       <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p1f4CountryInput" class="countryInput" type="text" value="" data-index="3"><br>
-        <!-- <input type="text" value=""> -->
+        <img class="flagImage" src="#"/>
+        <input class="countryInput" id="ci1d" value="" data-index="3">
       </div>
     </div>
 
     <div id="pileFlags">
-      <div class="middleBoard">        <div id="playerTurn">play</div>
+      <div id="p1" class="middleBoard">
+        <p id="player1">player 1</p>
+        <p id="player1Score">0</p>
       </div>
       <div class="middleBoard">
-        <div id="p1">
-          <p id="player1">player 1</p>
-          <p id="player1Score">0</p>
-        </div>
-        <div id="p2">
-          <p id="player2">player 2</p>
-          <p id="player2Score">0</p>
-        </div>
+        <button id="playAgain">game in progress</button>
+        <div id="playerTurn">play</div>
       </div>
-      <div class="middleBoard">
-        <img class="pile" id="pileFlagsLeft" src="#"/>
-      </div>
-      <div class="middleBoard">
-        <img class="pile" id="pileFlagsRight" src="#"/>
+      <div id="p2" class="middleBoard">
+        <p id="player2">player 2</p>
+        <p id="player2Score">0</p>
       </div>
     </div>
 
-    <div id="player2Board" class="board">
-      <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p2f1CountryInput" class="countryInput" type="text" value="" data-index="4"><br>
-        <!-- <input type="text" value=""> -->
-      </div>
-      <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p2f2CountryInput" class="countryInput" type="text" value="" data-index="5"><br>
-        <!-- <input type="text" value=""> -->
-      </div>
-      <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p2f3CountryInput" class="countryInput" type="text" value="" data-index="6"><br>
-        <!-- <input type="text" value=""> -->
-      </div>
-      <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p2f4CountryInput" class="countryInput" type="text" value="" data-index="7"><br>
-        <!-- <input type="text" value=""> -->
-      </div>
-      <div class="playerBoard">
-        player 2's board
-      </div>
+  <div id="player2Board" class="board">
+    <div class="flag">
+      <img class="flagImage" src="#"/><br>
+      <input class="countryInput" class="input" id="ci2a" type="text" value="" data-index="4"><br>
     </div>
-
+    <div class="flag">
+      <img class="flagImage" src="#"/><br>
+      <input class="countryInput" class="input" id="ci2b" type="text" value="" data-index="5"><br>
+    </div>
+    <div class="flag">
+      <img class="flagImage" src="#"/><br>
+      <input class="countryInput" class="input" id="ci2c" type="text" value="" data-index="6"><br>
+    </div>
+    <div class="flag">
+      <img class="flagImage" src="#"/><br>
+      <input class="countryInput" class="input" id="ci2d" type="text" value="" data-index="7"><br>
+    </div>
+    <div id="player2Bar" class="playerBoard">
+      player 2's board
+    </div>
   </div>
+</div>
 
-  <script src="js/extrahardflagsarray.js" charset="utf-8"></script>
-  <script src="js/extrahardflagsapp.js" charset="utf-8"></script>
+<script src="js/extrahardflagsarray.js" charset="utf-8"></script>
+<script src="js/extrahardflagsapp.js" charset="utf-8"></script>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-Flag Game
-
-- levels
-- easy, intermediate, hard, extra-hard
-- 196(?) flags
-- random flag appears on screen
-- rounds of 10?
-- user guesses flag
-- input box?
-- multiple choice?
-- correct answer + 3 random countries?
-- hints?
-- continent
-- capital city
-- fact
-- score
-- +10 for correct answer
-- -1 for incorrect answer
-- -1 for each hint used
-- display score
-
-
-
-
-
-
--->

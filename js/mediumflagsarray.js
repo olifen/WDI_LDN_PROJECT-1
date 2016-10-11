@@ -1,4 +1,8 @@
 var flagsMedium = [{
+  image: "dummy",
+  country: "dummy",
+  capital: "dummy"
+},{
   image: "images/flags_medium/afghanistan.svg",
   country: "afghanistan",
   capital: "kabul"

@@ -1,4 +1,8 @@
 var flagsHard = [{
+  image: "dummy",
+  country: "dummy",
+  capital: "dummy"
+},{
   image: "images/flags_hard/andorra.svg",
   country: "andorra",
   capital: "andorra-la-vella"
@@ -197,5 +201,5 @@ var flagsHard = [{
 },{
   image: "images/flags_hard/zimbabwe.svg",
   country: "zimbabwe",
-  capital: "harHre"
+  capital: "harare"
 }];

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var inputs = document.getElementsByClassName("countryInput");
   var turn = "player 2";
   var flagToReplaceIndex = 4;
-  var flag = flagsMedium.splice(0, 1);
+  var flag = flagsAll.splice(0, 1);
   var player1Score = 0;
   var player2Score = 0;
   var flagImage = document.getElementsByClassName("flagImage");
@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // uses the fisher-yates/knuth shuffle algorithm.
   // is called at the bottom of the script.
   function shuffle() {
-    var flagIndex = flagsMedium.length;
+    var flagIndex = flagsAll.length;
     var index;
     var temp;
 
     while (flagIndex > 0) {
       index = Math.floor(Math.random() * flagIndex);
       flagIndex--;
-      temp = flagsMedium[flagIndex];
-      flagsMedium[flagIndex] = flagsMedium[index];
-      flagsMedium[index] = temp;
+      temp = flagsAll[flagIndex];
+      flagsAll[flagIndex] = flagsAll[index];
+      flagsAll[index] = temp;
     }
   }
 
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // is called at the bottom of the script.
   function deal() {
     for(var i=0; i<=3; i++) {
-      player1Flags.push(flagsMedium.pop());
-      player2Flags.push(flagsMedium.pop());
+      player1Flags.push(flagsAll.pop());
+      player2Flags.push(flagsAll.pop());
     }
   }
 
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function replaceFlag(index) {
     var playerFlags = index > 3 ? player2Flags : player1Flags;
     var flags = index > 3 ? flags2 : flags1;
-    var nextFlag = flagsMedium.pop();
+    var nextFlag = flagsAll.pop();
     playerFlags[index % 4] = nextFlag;
     flags[index % 4].src = playerFlags[index % 4].image;
   }
