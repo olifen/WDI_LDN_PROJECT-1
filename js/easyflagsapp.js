@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-// deals 4 cards into each player's board
+  // deals 4 cards into each player's board
   function deal() {
     for(var i=0; i<=3; i++) {
       player1Flags.push(flagsEasy.pop());
@@ -47,20 +47,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
       flags2[i].setAttribute('data-answer', player2Flags[i].country);
     }
 
-    pileFlags[0].src = flagsEasy[0].image;
-    pileFlags[1].src = flagsEasy[1].image;
+    // pileFlags[0].src = flagsEasy[0].image;
+    // pileFlags[1].src = flagsEasy[1].image;
   }
 
-// checks to see if text in input box matches the country name
+  // checks to see if text in input box matches the country name
   function checkAnswer (index) {
-    var userAnswer = countryInputs[index].value;
-    if (userAnswer === player1Flags[index].country) {
-      countryInputs[index].style.backgroundColor = "lightgreen";
+    var userAnswer = countryInputs[index].value.toLowerCase();
+    var playerFlags = index > 3 ? player2Flags : player1Flags;
+
+    if (userAnswer === playerFlags[index % 4].country) {
+      // countryInputs[index].style.backgroundColor = "lightgreen";
+      updateScores();
+      replaceFlag(index);
+      resetInput();
       switchTurn();
-      updateScores(index);
+      disableInput();
+      checkWinner();
     } else {
-      countryInputs[index].style.backgroundColor = "tomato";
+      // countryInputs[index].style.backgroundColor = "tomato";
+      resetInput();
       switchTurn();
+      disableInput();
     }
   }
 
@@ -100,15 +108,93 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   // updates the score when answer given correctly
-  function updateScores(index) {
-    var userAnswer = countryInputs[index].value;
-    if (turn === "player 2" && userAnswer === player1Flags[index].country) {
+  function updateScores() {
+    if (turn === "player 1") {
       player1Score++;
       document.getElementById("player1Score").innerHTML=player1Score;
-    } else if (turn === "player 1" && userAnswer === player1Flags[index].country) {
+    } else {
       player2Score++;
       document.getElementById("player2Score").innerHTML=player2Score;
     }
+  }
+
+  function disableInput() {
+    if (turn === "player 1") {
+      document.getElementById("ci1a").disabled = false;
+      document.getElementById("ci1b").disabled = false;
+      document.getElementById("ci1c").disabled = false;
+      document.getElementById("ci1d").disabled = false;
+      document.getElementById("ci2a").disabled = true;
+      document.getElementById("ci2b").disabled = true;
+      document.getElementById("ci2c").disabled = true;
+      document.getElementById("ci2d").disabled = true;
+    } else {
+      document.getElementById("ci2a").disabled = false;
+      document.getElementById("ci2b").disabled = false;
+      document.getElementById("ci2c").disabled = false;
+      document.getElementById("ci2d").disabled = false;
+      document.getElementById("ci1a").disabled = true;
+      document.getElementById("ci1b").disabled = true;
+      document.getElementById("ci1c").disabled = true;
+      document.getElementById("ci1d").disabled = true;
+    }
+  }
+
+  function checkWinner() {
+    if (player1Score === 21) {
+      setMessage("player 1 wins");
+      console.log("player 1 wins");
+      document.getElementById("ci1a").disabled = true;
+      document.getElementById("ci1b").disabled = true;
+      document.getElementById("ci1c").disabled = true;
+      document.getElementById("ci1d").disabled = true;
+      document.getElementById("ci2a").disabled = true;
+      document.getElementById("ci2b").disabled = true;
+      document.getElementById("ci2c").disabled = true;
+      document.getElementById("ci2d").disabled = true;
+      playAgain();
+    } else if (player2Score === 21) {
+      setMessage("player 2 wins");
+      console.log("player 2 wins");
+      document.getElementById("ci1a").disabled = true;
+      document.getElementById("ci1b").disabled = true;
+      document.getElementById("ci1c").disabled = true;
+      document.getElementById("ci1d").disabled = true;
+      document.getElementById("ci2a").disabled = true;
+      document.getElementById("ci2b").disabled = true;
+      document.getElementById("ci2c").disabled = true;
+      document.getElementById("ci2d").disabled = true;
+      playAgain();
+    }
+  }
+
+  function resetInput() {
+    for (i=0; i<countryInputs.length; i++) {
+      document.getElementsByClassName("countryInput")[i].value = "";
+    }
+  }
+
+  function playAgain() {
+    var playAgainBtn = document.getElementById("playAgain");
+    playAgainBtn.innerText = "play again?";
+    playAgainBtn.onclick = function() {
+      location.reload ();
+    };
+  }
+
+  function replaceFlag(index) {
+    console.log("replaceFlag");
+    // replace the next flag object with the object in the payerFlags array
+    var playerFlags = index > 3 ? player2Flags : player1Flags;
+    console.log(playerFlags);
+    var flags = index > 3 ? flags2 : flags1;
+    var nextFlag = flagsEasy.pop();
+
+    playerFlags[index % 4] = nextFlag;
+    // update the flag image
+    flags[index % 4].src = playerFlags[index % 4].image;
+    // put the next flag in on the pile
+    // pileFlags[0].src = flagsEasy[0].image;
   }
 
   shuffle();
@@ -117,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   playerTurn();
   addSumbit();
   switchTurn();
-  checkAnswer();
+  disableInput();
 
 });
 

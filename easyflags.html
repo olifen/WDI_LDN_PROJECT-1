@@ -17,67 +17,66 @@
     </div>
     <div id="player1Board" class="board">
       <div class="flag">
-        <img class="flagImage" src="#"/><br>
-        <input id="p1f1CountryInput" class="countryInput" type="text" value="" data-index="0"><br>
+        <img id="flag1" class="flagImage" src="#"/><br>
+        <input class="countryInput" id="ci1a" type="text" value="" data-index="0"><br>
+        <!-- <input class="capitalInput" id="cpi1a" type="text" value="" data-index="0"><br> -->
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p1f2CountryInput" class="countryInput" type="text" value="" data-index="1"><br>
-        <!-- <input type="text" value=""> -->
+        <input class="countryInput" id="ci1b" type="text" value="" data-index="1"><br>
+        <!-- <input class="capitalInput" id="cpi1b" type="text" value="" data-index="1"><br> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p1f3CountryInput" class="countryInput" type="text" value="" data-index="2"><br>
-        <!-- <input type="text" value=""> -->
+        <input class="countryInput" id="ci1c" type="text" value="" data-index="2"><br>
+        <!-- <input class="capitalInput" id="cpi1c" type="text" value="" data-index="2"><br> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p1f4CountryInput" class="countryInput" type="text" value="" data-index="3"><br>
-        <!-- <input type="text" value=""> -->
+        <input class="countryInput" id="ci1d" type="text" value="" data-index="3"><br>
+        <!-- <input class="capitalInput" id="cpi1d" type="text" value="" data-index="3"><br> -->
       </div>
     </div>
 
     <div id="pileFlags">
-      <div class="middleBoard">        <div id="playerTurn">play</div>
+      <div id="p1" class="middleBoard">
+        <p id="player1">player 1</p>
+        <p id="player1Score">0</p>
       </div>
       <div class="middleBoard">
-        <div id="p1">
-          <p id="player1">player 1</p>
-          <p id="player1Score">0</p>
-        </div>
-        <div id="p2">
+        <button id="playAgain">game in progress</button>
+        <div id="playerTurn">play</div>
+      </div>
+        <div id="p2" class="middleBoard">
           <p id="player2">player 2</p>
           <p id="player2Score">0</p>
         </div>
       </div>
-      <div class="middleBoard">
-        <img class="pile" id="pileFlagsLeft" src="#"/>
-      </div>
-      <div class="middleBoard">
-        <img class="pile" id="pileFlagsRight" src="#"/>
-      </div>
+      <!-- <div class="middleBoard">
+        <img class="pile" src="#"/>
+      </div> -->
     </div>
 
     <div id="player2Board" class="board">
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p2f1CountryInput" class="countryInput" type="text" value="" data-index="4"><br>
+        <input class="countryInput" id="ci2a" type="text" value="" data-index="4"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p2f2CountryInput" class="countryInput" type="text" value="" data-index="5"><br>
+        <input class="countryInput" id="ci2b" type="text" value="" data-index="5"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p2f3CountryInput" class="countryInput" type="text" value="" data-index="6"><br>
+        <input class="countryInput" id="ci2c" type="text" value="" data-index="6"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="flag">
         <img class="flagImage" src="#"/><br>
-        <input id="p2f4CountryInput" class="countryInput" type="text" value="" data-index="7"><br>
+        <input class="countryInput" id="ci2d" type="text" value="" data-index="7"><br>
         <!-- <input type="text" value=""> -->
       </div>
       <div class="playerBoard">

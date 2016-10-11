@@ -1,11 +1,15 @@
 var flagsEasy = [{
-  image: "images/flags_easy/brazil.svg",
-  country: "brazil",
-  capital: "brasilia"
+  image: "dummy",
+  country: "dummy",
+  capital: "dummy"
 },{
   image: "images/flags_easy/china.svg",
   country: "china",
   capital: "beijing"
+},{
+  image: "images/flags_easy/brazil.svg",
+  country: "brazil",
+  capital: "brasilia"
 },{
   image: "images/flags_easy/france.svg",
   country: "france",
