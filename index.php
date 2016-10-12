@@ -1,1 +1,1 @@
-<?php include_once 'all.html' ?>
+<?php include_once 'allflags.html' ?>
