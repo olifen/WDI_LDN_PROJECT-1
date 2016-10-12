@@ -1,1 +1,1 @@
-<?php include_once 'allflags.html' ?>
+<?php include_once 'home.html' ?>
