@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // if it is met, all input boxes are disabled and a message is displayed, noting which player won.
   // is called in the checkAnswer to see if there is a winner after each answer submission.
   function checkWinner() {
-    if (player1Score === 5) {
+    if (player1Score === 20) {
       setMessage("player 1 wins");
       document.getElementById("ci1a").disabled = true;
       document.getElementById("ci1b").disabled = true;
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementById("ci2c").disabled = true;
       document.getElementById("ci2d").disabled = true;
       playAgain();
-    } else if (player2Score === 5) {
+    } else if (player2Score === 20) {
       setMessage("player 2 wins");
       document.getElementById("ci1a").disabled = true;
       document.getElementById("ci1b").disabled = true;
