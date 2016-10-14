@@ -96,7 +96,7 @@ var flagsMedium = [{
   capital: "yamoussoukro"
 },{
   image: "images/flags_medium/kazakhstan.svg",
-  country: "kaakhstan",
+  country: "kazakhstan",
   capital: "astana"
 },{
   image: "images/flags_medium/kenya.svg",

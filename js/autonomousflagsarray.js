@@ -103,7 +103,7 @@ var flagsAutonomous = [{
   country: "easter island",
   capital: "dummy"
 },{
-  image: "images/flags_autonomous/embera-wounaan.svg",
+  image: "images/flags_autonomous/embera-wounaan.png",
   country: "embera-wounaan",
   capital: "dummy"
 },{
@@ -259,7 +259,7 @@ var flagsAutonomous = [{
   country: "puerto rico",
   capital: "dummy"
 },{
-  image: "images/flags_autonomous/rodrigues.svg",
+  image: "images/flags_autonomous/rodrigues.gif",
   country: "rodrigues",
   capital: "dummy"
 },{
